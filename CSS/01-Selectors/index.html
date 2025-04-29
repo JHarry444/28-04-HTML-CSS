@@ -30,7 +30,28 @@
         h1 {
             color: pink;
         }
+       
+        /* only applies to paragraphs INSIDE a div */
+        /* more specific than line 40 as it has two tags, not just one! */
+        div p {
+            color: orange;
+        }
 
+        p {
+            color: purple;
+        }
+        /* only applies to paragraphs DIRECTLY inside a div */
+        div > p {
+            color: plum;
+        }
+
+        h2 ~ p {
+            color: red;
+        }
+
+        h2 + p {
+            color: lightblue;
+        }
 
     </style>
     <link rel="stylesheet" href="styles.css">
@@ -50,10 +71,10 @@
         <h2 class="subheading">Links</h2>
         <a href="https://www.qa.com/"> QA </a>
         <a href="./about.html">
-            <img src="./me.jpg" height="50px">
+            <img src="./me.png" height="50px">
         </a>
         <a href="./about.html" target="_blank">
-            <img src="./me.jpg" height="50px">
+            <img src="./me.png" height="50px">
         </a>
         <a href="#lists"> Lists </a>
     </div>
