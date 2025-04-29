@@ -10,56 +10,77 @@
  when the form is submitted -->
 
 <body>
-    <!-- ctrl + / -->
-    <!-- forms are a way of of gathering data -->
-    <form action="" method="post">
-        <!-- labels are linked to inputs using the or attribute -->
-        <label for="textInput">Username:</label>
-        <!-- if you click on a label that is linked to the input then you'll put the cursor in that input -->
-        <input type="text" name="username" id="textInput" autofocus>
-        <!-- autofocus -> automatically puts the cursor in this field -->
-        <!-- attributes like autofocus dont need a value as they can only be on or off -->
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="pwdInput">
-        <br>
-        <label for="email">Email:</label>
-        <!-- has basic validation to check if the value is x@y -->
-        <input type="email" name="email" id="emailInput" placeholder="x@y">
-        <!-- placeholders arent actually values they just show people what the value might look like -->
-        <!-- adds a new line -->
-        <br>
-        <label for="check">Stay signed in</label>
-        <input type="checkbox" name="staySignedIn" id="check">
-        <br>
-        <label for="age">Age:</label>
-        <!-- value sets the value in the field - lets you provide a default -->
-        <input type="number" name="age" value="12" id="numberInput" min="1" max="100">
-        <br>
-        <!-- radios are like having multiple exclusive checks -->
-        <!-- have to have the same name otherwise you can pick multiple options -->
-        <label for="radio1">Radio 1</label>
-        <input type="radio" name="radio" id="radio1">
-        <label for="radio2">Radio 2</label>
-        <input type="radio" name="radio" id="radio2">
-        <label for="radio3">Radio 3</label>
-        <input type="radio" name="radio" id="radio3">
-        <br>
-        <label for="dropdown">Currency</label>
-        <!-- required inputs MUST have a value -->
-        <select name="currency" id="dropdown" required>
-            <option value="">
-            </option>
-            <option value="gbp"> £ </option>
-            <option value="usd"> $ </option>
-            <option value="yen"> ¥ </option>
-            <option value="eur"> € </option>
-        </select>
-        <br>
-        <input type="hidden" name="hidden" value="HELLO">
-        <!-- Two ways to submit a form - Enter or clicking a 'submit' button -->
-        <button type="submit">Submit</button>
-    </form>
+    <section>
+        <h2>Lists</h2>
+        <!-- unordered list (bullets) -->
+        <ul>
+            <li> Milk </li>
+            <li> Eggs </li>
+            <li> Flour </li>
+        </ul>
+        <!-- ordered list (numbers) -->
+        <ol>
+            <li> Milk </li>
+            <li> Eggs </li>
+            <li> Flour </li>
+        </ol>
+    </section>
+    <section>
+        <h2>Forms</h2>
+        <!-- ctrl + / -->
+        <!-- forms are a way of gathering data -->
+        <form action="" method="post">
+            <fieldset>
+                <legend>User Details</legend>
+                <!-- labels are linked to inputs using the or attribute -->
+                <label for="textInput">Username:</label>
+                <!-- if you click on a label that is linked to the input then you'll put the cursor in that input -->
+                <input type="text" name="username" id="textInput" autofocus>
+                <!-- autofocus -> automatically puts the cursor in this field -->
+                <!-- attributes like autofocus don't need a value as they can only be on or off -->
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="pwdInput">
+                <br>
+                <label for="email">Email:</label>
+                <!-- has basic validation to check if the value is x@y -->
+                <input type="email" name="email" id="emailInput" placeholder="x@y">
+                <!-- placeholders arent actually values they just show people what the value might look like -->
+            </fieldset>
+            <!-- adds a new line -->
+            <br>
+            <label for="check">Stay signed in</label>
+            <input type="checkbox" name="staySignedIn" id="check">
+            <br>
+            <label for="age">Age:</label>
+            <!-- value sets the value in the field - lets you provide a default -->
+            <input type="number" name="age" value="12" id="numberInput" min="1" max="100">
+            <br>
+            <!-- radios are like having multiple exclusive checks -->
+            <!-- have to have the same name otherwise you can pick multiple options -->
+            <label for="radio1">Radio 1</label>
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio2">Radio 2</label>
+            <input type="radio" name="radio" id="radio2">
+            <label for="radio3">Radio 3</label>
+            <input type="radio" name="radio" id="radio3">
+            <br>
+            <label for="dropdown">Currency</label>
+            <!-- required inputs MUST have a value -->
+            <select name="currency" id="dropdown" required>
+                <option value="">
+                </option>
+                <option value="gbp"> £ </option>
+                <option value="usd"> $ </option>
+                <option value="yen"> ¥ </option>
+                <option value="eur"> € </option>
+            </select>
+            <br>
+            <input type="hidden" name="hidden" value="HELLO">
+            <!-- Two ways to submit a form - Enter or clicking a 'submit' button -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 </body>
 
 </html>
