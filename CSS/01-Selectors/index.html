@@ -30,7 +30,7 @@
         h1 {
             color: pink;
         }
-       
+
         /* only applies to paragraphs INSIDE a div */
         /* more specific than line 40 as it has two tags, not just one! */
         div p {
@@ -40,19 +40,61 @@
         p {
             color: purple;
         }
+
         /* only applies to paragraphs DIRECTLY inside a div */
-        div > p {
+        div>p {
             color: plum;
         }
 
-        h2 ~ p {
+        h2~p {
             color: red;
         }
 
-        h2 + p {
+        h2+p {
             color: lightblue;
         }
 
+        /* make ALL TEXT inputs green */
+        input[type="text"] {
+            color: green;
+        }
+
+        /* pseudo-class
+        'class' applied by the browser */
+        a {
+            color: green;
+        }
+
+        /* :visited only applies to links that have been clicked! */
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        /* applies to the first li in a list */
+        li:first-child {
+            font-weight: bold;
+        }
+
+        li:nth-child(odd) {
+            color: red;
+        }
+
+        
+        li:nth-child(even) {
+            color: blue;
+        }
+
+        li:last-child {
+            font-style: italic;
+        }
+
+        p:last-of-type {
+            color: grey;
+        }
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
