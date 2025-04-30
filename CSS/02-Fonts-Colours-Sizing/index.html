@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colours Fonts and Sizing</title>
+    <style>
+        img {
+            width: 25%;
+        }
+
+        body {
+            /* fractions of an inch (this is what word, etc uses) */
+            font-size: 25pt;
+        }
+
+        p.weirdText {
+            /* 75% of the normal font size */
+            font-size: 0.75em;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+            font-family: Arial, Helvetica, sans-serif;
+            /* adds a shadow to the text (use the widget in the browser it's much easier) */
+            text-shadow: 0px 0px black;
+
+        }
+
+        p:last-of-type {
+            /* rgba -> red green blue alpha */
+            /* alpha -> transparency */
+            color: rgba(0, 0, 0, 0.5);
+
+
+            /* hue saturation lightness alpha */
+            color: hsl(0, 0%, 0%);
+        }
+    </style>
+</head>
+
+<body>
+    <p>text <em>text</em> <img src="./me.png"> text text</p>
+    <p class="weirdText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus neque elit, fringilla at tellus vitae, placerat
+        suscipit turpis. Proin dignissim ex vel lorem ultrices, nec hendrerit metus fermentum. Integer pretium consequat
+        massa, sed lobortis tortor vehicula vitae. Etiam vitae sagittis nulla. Nam semper nibh eu mi bibendum consequat.
+        Suspendisse porttitor imperdiet quam vitae venenatis. Sed sit amet purus vel ligula aliquam venenatis in vitae
+        risus.</p>
+    <p>Quisque diam diam, egestas vel justo ut, viverra lobortis erat. Mauris rutrum tincidunt neque at convallis. Nulla
+        quis arcu imperdiet, tincidunt nisl non, ornare tellus. Donec accumsan bibendum ex in blandit. Donec risus ex,
+        suscipit quis suscipit fermentum, porta id dui. Maecenas et facilisis purus. Aenean elementum ut eros sed
+        placerat. Aliquam iaculis tortor lectus, quis porta quam tincidunt nec. Donec fringilla diam commodo venenatis
+        consequat.</p>
+</body>
+
+</html>

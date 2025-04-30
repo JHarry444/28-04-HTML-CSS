@@ -75,7 +75,7 @@
         }
 
         /* applies to the first li in a list */
-        li:first-child {
+        li::not(:first-child) {
             font-weight: bold;
         }
 
