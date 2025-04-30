@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="main.css">
     <style>
         #sticky {
-            max-height: 100px;
+            max-height: 150px;
+            /* anything past 150px in the div needs to be scrolled to */
             overflow-y: scroll;
         }
 
@@ -29,7 +30,13 @@
         <section>
             <h2>Box Model</h2>
             <div>
+                <!-- display:
+                    inline - multiple elements may occupy the same line
+                    block - always makes a new line
+                    none - does not display on the page -->
                 <label for="input">Input:</label>
+                <input type="text" name="input" id="input" style="display: block;">
+                <label for="input" style="display: none;">Input:</label>
                 <input type="text" name="input" id="input">
             </div>
             <br>
